@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executabe rust-minecraft",
+      "cargo": {
+        "args": ["build", "--bin=rust-minecraft", "--package=rust-minecraft"],
+        "filter": {
+          "name": "rust-minecraft",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
